@@ -13,7 +13,7 @@ Welcome to my **Portfolio Website**! This site is a personal project to showcase
 
 ## 📸 Live Demo
 
-🔗 [View Live Portfolio](https://imluffy000.github.io/Portfolio)  
+🔗 [View Live Portfolio](https://imluffy000.github.io/Portfolio/)
 
 ## 📁 Folder Structure
 
