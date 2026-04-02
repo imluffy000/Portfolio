@@ -589,11 +589,135 @@ section .button {
   }
 }
 
+@media (max-width: 480px) {
+  nav {
+    padding: 12px 0;
+  }
 
+  nav .navbar {
+    width: 95%;
+  }
 
+  .home {
+    min-height: calc(100vh - 80px);
+  }
 
---rich-black: #0d1b2aff;
---oxford-blue: #1b263bff;
---yinmn-blue: #415a77ff;
---silver-lake-blue: #778da9ff;
---platinum: #e0e1ddff;
+  .home .home-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    gap: 18px;
+  }
+
+  .home .text-one {
+    font-size: 20px;
+  }
+
+  .home .text-two {
+    font-size: 30px;
+  }
+
+  .home .text-three {
+    font-size: 20px;
+  }
+
+  .home .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 260px;
+    padding: 10px 16px;
+  }
+
+  .about .about-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about .about-details .left,
+  .about .about-details .right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .about .left img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .skills .skills-details,
+  .Projects .boxes,
+  .about .about-details {
+    flex-direction: column;
+  }
+
+  .skills-details .text,
+  .skills-details .boxes,
+  .skills-details .experience,
+  .Projects .project-card {
+    width: 100%;
+  }
+
+  .skills-details .boxes .box,
+  .Projects .boxes .box {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .contact .text {
+    width: 100%;
+  }
+
+  .contact .contact-details {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .contact .contact-details .right,
+  .contact .contact-details .left {
+    width: 100% !important;
+  }
+
+  .contact .content {
+    max-width: 95% !important;
+    padding: 20px !important;
+  }
+
+  .scroll-button a {
+    right: 12px;
+    bottom: 12px;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .navbar .menu {
+    padding-top: 70px;
+  }
+
+  .navbar .menu a {
+    font-size: 20px;
+  }
+
+  .navbar .media-icons a {
+    font-size: 16px;
+  }
+}
+
+/* color variables moved into :root for correctness */
+:root {
+  --rich-black: #0d1b2aff;
+  --oxford-blue: #1b263bff;
+  --yinmn-blue: #415a77ff;
+  --silver-lake-blue: #778da9ff;
+  --platinum: #e0e1ddff;
+}
