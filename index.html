@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <canvas id="starsCanvas"></canvas>
     <div class="scroll-button">
         <a href="#home"><i class="fas fa-arrow-up"></i></a>
     </div>
@@ -27,9 +28,9 @@
                 </div>
             </ul>
             <div class="media-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/imluffy000" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/prasanth-changala-482308301" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:Prasanthchangala000@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
         <div class="menu-btn">
@@ -37,34 +38,87 @@
         </div>
     </nav>
     <section class="home" id="home">
-        <div class="home-content">
-            <div class="text">
-                <div class="text-one">Hello,</div>
-                <div class="text-two">I'm Prasanth changala</div>
-                <div class="text-three">Data Analyst | AI/ML Enthusiast</div>
-                <div style="font-size: 1.2rem; margin-top: 10px; margin-bottom: 20px;">Turning Data into Insights & Building Intelligent Systems</div>
+        <div class="home-content"
+            style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 90%; margin: auto; padding-top: 100px;">
+            <div class="left-text" style="flex: 1;">
+                <div class="hero-socials" style="margin-bottom: 20px; display: flex; gap: 15px;">
+                    <a href="https://github.com/imluffy000" target="_blank" style="color: var(--text-muted); font-size: 24px; transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--accent-color)'"
+                        onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/prasanth-changala-482308301" target="_blank" style="color: var(--text-muted); font-size: 24px; transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--accent-color)'"
+                        onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:Prasanthchangala000@gmail.com" style="color: var(--text-muted); font-size: 24px; transition: color 0.3s;"
+                        onmouseover="this.style.color='var(--accent-color)'"
+                        onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-envelope"></i></a>
+                </div>
+                <div class="text-two"
+                    style="color: var(--text-main); font-size: 55px; font-weight: 700; line-height: 1.2; margin-bottom: 10px;">
+                    Hi, I'm Prasanth</div>
+                <div class="text-three"
+                    style="font-size: 24px; margin: 15px 0; color: var(--text-muted); font-weight: 400;">MERN Stack
+                    Developer | Data Analyst | <span style="color: var(--accent-color);">AI/ML Enthusiast</span></div>
+                <div
+                    style="font-size: 16px; margin-bottom: 30px; color: var(--text-muted); max-width: 600px; line-height: 1.6;">
+                    Building Scalable Applications, Analyzing Data, and Creating Intelligent Systems
+                </div>
 
+                <div class="button" style="display: flex; flex-wrap: wrap; gap: 15px;">
+                    <button class="btn-primary" onclick="document.getElementById('Projects').scrollIntoView({behavior: 'smooth'})">View Projects</button>
+                    <button class="btn-secondary">Download Resume</button>
+
+                </div>
             </div>
-            <div class="button">
-                <button>View Projects</button>
-                <button style="margin-left: 10px;">Download Resume</button>
+            <div class="right-image" style="flex: 1; display: flex; justify-content: center; position: relative;">
+                <div style="position: relative;">
+                    <!-- A decorative background blob like in the reference -->
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; background: var(--accent-color); filter: blur(100px); opacity: 0.15; border-radius: 50%; z-index: -1;">
+                    </div>
+                    <img src="op.png" alt="Prasanth"
+                        style="width: 350px; border-radius: 20px; z-index: 1; position: relative;" />
+                </div>
             </div>
         </div>
     </section>
     <section class="about" id="about">
         <div class="content">
             <div class="title"><span>About Me</span></div>
-            <div class="about-details">
-                <div class="left">
-                    <img src="op.png" alt="" />
+            <div class="about-details"
+                style="display: flex; gap: 50px; align-items: center; justify-content: space-between;">
+                <div class="left" style="flex: 1; display: flex; justify-content: center; position: relative;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; background: var(--accent-color); filter: blur(80px); opacity: 0.15; border-radius: 50%; z-index: -1;">
+                    </div>
+                    <img src="profile.jpg" alt="About Me"
+                        style="width: 100%; max-width: 380px; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; z-index: 1; box-shadow: 0 10px 40px rgba(117,186,255,0.15);" />
                 </div>
-                <div class="right">
-                    <div class="topic">Data & AI Enthusiast</div>
-                    <p>
-                        I am a Computer Science undergraduate focused on Data Analytics and AI/ML. Skilled in SQL, Power BI, and Python, I build data-driven solutions and interactive dashboards. I have experience analyzing <span style="color: #ff6b6b; font-weight: bold;">10K+</span> records, creating KPI-driven reports, and developing AI-powered data tools. Passionate about transforming data into actionable insights and continuously improving my analytical skills.
+                <div class="right" style="flex: 1.2;">
+                    <p style="color: var(--text-muted); font-size: 16px; line-height: 1.8; margin-bottom: 30px;">
+                        I am a Computer Science undergraduate with skills in Web Development, Data Analytics, and AI/ML.
+                        I build responsive web applications, develop data-driven dashboards, and create AI-powered
+                        solutions. I have experience working with modern tools like React, Node.js, Power BI, SQL, and
+                        Python. I enjoy solving real-world problems through technology and continuously learning new
+                        tools and frameworks.
                     </p>
+
+                    <div class="stats-container" style="display: flex; gap: 30px; margin-bottom: 40px;">
+                        <div class="stat-box" style="text-align: center;">
+                            <h3 style="color: var(--accent-color); font-size: 32px; font-weight: 700;">5+</h3>
+                            <p style="color: var(--text-muted); font-size: 14px;">Education <br>Years</p>
+                        </div>
+                        <div class="stat-box" style="text-align: center;">
+                            <h3 style="color: var(--accent-color); font-size: 32px; font-weight: 700;">10+</h3>
+                            <p style="color: var(--text-muted); font-size: 14px;">Projects <br>Completed</p>
+                        </div>
+                        <div class="stat-box" style="text-align: center;">
+                            <h3 style="color: var(--accent-color); font-size: 32px; font-weight: 700;">100+</h3>
+                            <p style="color: var(--text-muted); font-size: 14px;">Records <br>Analyzed</p>
+                        </div>
+                    </div>
+
                     <div class="button">
-                        <button>Download CV</button>
+                        <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000', '_blank')">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -73,37 +127,245 @@
     <section class="skills" id="skills">
         <div class="content">
             <div class="title"><span>My Skills</span></div>
-            <div class="skills-details">
-                <div class="text">
-                    <div class="topic">Skills Reflects Our Knowledge</div>
-                    <p>
-                        Languages: Python, SQL <br>
-                        Analytics: Data Cleaning, EDA, KPI Analysis <br>
-                        Visualization: Power BI (DAX, Power Query), Excel <br>
-                        AI Tools: Generative AI, AI-driven Data Analysis <br>
-                        Data Engineering: dbt Cloud, ETL Pipelines <br>
-                        Platforms: Snowflake, Azure (Basics) <br>
-                        Libraries: Pandas, NumPy, scikit-learn <br>
-                    </p>
+            <div class="skills-details" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; width: 100%; align-items: start;">
+
+                <!-- Programming -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        Programming</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-python" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Python</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-js" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-file-code"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">C++</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-java" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Java</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="boxes">
-                    <div class="box">
-                        <div class="topic"><i class="fab fa-python" style="margin-right: 5px; color: #3776ab;"></i> Python</div>
-                        <div class="per">90%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic"><i class="fas fa-database" style="margin-right: 5px; color: #f29111;"></i> SQL</div>
-                        <div class="per">85%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic"><i class="fas fa-chart-bar" style="margin-right: 5px; color: #f2c811;"></i> Power BI</div>
-                        <div class="per">80%</div>
-                    </div>
-                    <div class="box">
-                        <div class="topic"><i class="fas fa-brain" style="margin-right: 5px; color: #e84393;"></i> AI/ML</div>
-                        <div class="per">75%</div>
+
+                <!-- Web Development -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        Web Development</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-html5" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">HTML</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-css3-alt"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">CSS</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-react" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">React</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-node-js"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-bolt" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Vite</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-leaf" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">MongoDB</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Data Analytics -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        Data Analytics</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-database"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">SQL</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-chart-bar"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Power BI</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-table" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Excel</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-broom" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Data
+                                    Cleaning</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-chart-line"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">EDA</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        AI/ML</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-layer-group"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Pandas &
+                                    NumPy</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-robot" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-project-diagram"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">TensorFlow</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-brain" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">RAG</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-magic" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Generative
+                                    AI</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        Data Engineering</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-cloud" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">dbt Cloud</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-random" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">ETL
+                                    Pipelines</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-sync-alt"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Data
+                                    Transform</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-microsoft" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3
+                        style="color: var(--text-main); text-align: left; margin-bottom: 20px; font-size: 24px; font-weight: 600;">
+                        Tools</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: flex-start;">
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-git-alt"
+                                    style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Git</span></div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-github" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">GitHub</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-fire" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Firebase</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-code" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">VS Code</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fab fa-figma" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">Figma</span>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i
+                                    class="fas fa-cogs" style="font-size: 24px; color: var(--accent-color);"></i><span
+                                    style="color: var(--text-main); font-weight: 600; font-size: 16px;">n8n</span></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -111,35 +373,174 @@
         <div class="content">
             <div class="title"><span>My Projects</span></div>
             <div class="boxes">
-                <div class="box" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div class="icon">
-                        <i class="fas fa-chart-pie"></i>
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div
+                        style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-chart-pie" style="font-size: 40px; color: var(--accent-color);"></i>
                     </div>
-                    <div class="topic" style="font-size: 1.2rem; min-height: 40px;">Retail Sales Analytics Dashboard</div>
-                    <p>
-                        - Built Power BI dashboard on <span style="font-weight: bold; color: #D81B60;">10K+</span> records<br>
-                        - Used DAX, Power Query<br>
-                        - Improved insights by <span style="font-weight: bold; color: #00897B;">30%</span>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">Retail
+                        Sales Dashboard</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Analyzed <span
+                            style="font-weight: bold; color: var(--accent-color);">10K+</span> records, building
+                        comprehensive Power BI dashboard enhancing overall insights by <span
+                            style="font-weight: bold; color: var(--accent-color);">30%</span>.</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Power BI</span>
+                        <span class="tech-pill">Data Analytics</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/retail-sales-analysis-powerBI', '_blank')"
+                        style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i
+                            class="fab fa-github"></i> Code</button>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div
+                        style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-robot" style="font-size: 40px; color: var(--accent-color);"></i>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">AI
+                        Data Visualizer</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Automated analysis workflow
+                        processing <span style="font-weight: bold; color: var(--accent-color);">5K+</span> records,
+                        explicitly reducing data processing time by <span
+                            style="font-weight: bold; color: var(--accent-color);">35%</span>.</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">AI Agents</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/ai_data_visualisation_agent', '_blank')"
+                        style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i
+                            class="fab fa-github"></i> Code</button>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div
+                        style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-microphone" style="font-size: 40px; color: var(--accent-color);"></i>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">AI
+                        Blog to Audio Generator</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Built AI pipeline for
+                        text-to-speech using NLP and TTS models to significantly improve content accessibility for
+                        users.</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">NLP</span>
+                        <span class="tech-pill">TTS</span>
+                        <span class="tech-pill">Python</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/ai_blog_to_podcast_agent', '_blank')"
+                        style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i
+                            class="fab fa-github"></i> Code</button>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div
+                        style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-laptop-code" style="font-size: 40px; color: var(--accent-color);"></i>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">
+                        Portfolio Website</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Built responsive,
+                        high-performance web portfolio highlighting advanced skills and projects using Core Web
+                        Technologies.</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                        <span class="tech-pill">JavaScript</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/Portfolio', '_blank')"
+                        style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i
+                            class="fab fa-github"></i> Code</button>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div
+                        style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-trophy" style="font-size: 40px; color: var(--accent-color);"></i>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">
+                        Hackathon Scoreboard</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Developed responsive UI
+                        dashboard bridging frontend interactivity with robust backend APIs for real-time score tracking.
+                    </p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Node.js</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/Hackthonfrontend', '_blank')"
+                        style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i
+                            class="fab fa-github"></i> Code</button>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div style="width: 100%; height: 180px; background: rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px solid rgba(255,255,255,0.05);">
+                        <i class="fas fa-database" style="font-size: 40px; color: var(--accent-color);"></i>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 600; color: var(--text-main); margin-bottom: 10px;">Data Pipeline (dbt + Snowflake)</div>
+                    <p style="color: var(--text-muted); font-size: 14px; flex-grow: 1;">Built ETL pipeline which explicitly improved overall data reliability by <span style="font-weight: bold; color: var(--accent-color);">30%</span>.</p>
+                    <div class="tech-pills">
+                        <span class="tech-pill">dbt</span>
+                        <span class="tech-pill">Snowflake</span>
+                        <span class="tech-pill">SQL</span>
+                    </div>
+                    <button class="btn-secondary" onclick="window.open('https://github.com/imluffy000/Order-management-Data-Pipeline', '_blank')" style="width: 100%; padding: 10px; border-radius: 12px; font-size: 14px;"><i class="fab fa-github"></i> Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience" id="experience">
+        <div class="content">
+            <div class="title"><span>Experience & Extracurricular</span></div>
+            <div class="boxes" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+                <div class="project-card" style="width: 100%; max-width: 450px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-briefcase" style="font-size: 28px; color: var(--accent-color);"></i>
+                        <h3 style="color: var(--text-main); font-size: 20px;">AI/ML Intern – AICTE & EduSkills (Google) | 2025</h3>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 15px; flex-grow: 1; margin-bottom: 15px;">
+                        • Performed data preprocessing & feature engineering<br>
+                        • Built ML models using scikit-learn & TensorFlow
                     </p>
                 </div>
-                <div class="box" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div class="icon">
-                        <i class="fas fa-robot"></i>
+
+                <div class="project-card" style="width: 100%; max-width: 450px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-laptop-code" style="font-size: 28px; color: var(--accent-color);"></i>
+                        <h3 style="color: var(--text-main); font-size: 20px;">Web Development Intern – EduSkills | 2025</h3>
                     </div>
-                    <div class="topic" style="font-size: 1.2rem; min-height: 40px;">AI Data Visualization Agent</div>
-                    <p>
-                        - Automated analysis of <span style="font-weight: bold; color: #D81B60;">5K+</span> records<br>
-                        - Reduced analysis time by <span style="font-weight: bold; color: #00897B;">35%</span>
+                    <p style="color: var(--text-muted); font-size: 15px; flex-grow: 1; margin-bottom: 15px;">
+                        • Developed responsive web applications<br>
+                        • Worked with APIs & dynamic data handling
                     </p>
                 </div>
-                <div class="box" style="transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                    <div class="icon">
-                        <i class="fas fa-database"></i>
+
+                <div class="project-card" style="width: 100%; max-width: 450px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-users" style="font-size: 28px; color: var(--accent-color);"></i>
+                        <h3 style="color: var(--text-main); font-size: 20px;">GDG Core Team</h3>
                     </div>
-                    <div class="topic" style="font-size: 1.2rem; min-height: 40px;">Data Pipeline (dbt + Snowflake)</div>
-                    <p>
-                        - Built ETL pipeline<br>
-                        - Improved data reliability by <span style="font-weight: bold; color: #00897B;">30%</span>
+                    <p style="color: var(--text-muted); font-size: 15px; flex-grow: 1; margin-bottom: 15px;">
+                        • Core Team Member at Google Developer Groups On Campus.<br>
+                        • Organized technical events spreading knowledge in AI and Web Dev.
+                    </p>
+                </div>
+
+                <div class="project-card" style="width: 100%; max-width: 450px;">
+                    <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                        <i class="fas fa-code-branch" style="font-size: 28px; color: var(--accent-color);"></i>
+                        <h3 style="color: var(--text-main); font-size: 20px;">Freelance / Development</h3>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 15px; flex-grow: 1; margin-bottom: 15px;">
+                        • Operates as a Freelance Web Developer for active client requirements.<br>
+                        • Fast-paced active learner in AI, advanced Data, and scalable Dev.
                     </p>
                 </div>
             </div>
@@ -147,19 +548,57 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="content">
-            <div class="title"><span>Contact Me</span></div>
-            <div class="text">
-                <div class="topic">Looking for Opportunities?</div>
-                <p>Open to Data Analyst, Business Analytics, and AI/ML internship opportunities. Let’s connect!</p>
-                <div class="button">
-                    <button>Let's Chat</button>
+        <div class="content" style="max-width: 1200px; margin: auto; padding: 60px 20px;">
+            <div class="title" style="text-align: center; margin-bottom: 50px;">
+                <span style="color: var(--accent-color); font-size: 36px; font-weight: 700; position: relative;">Get In
+                    Touch</span>
+            </div>
+
+            <div class="contact-details"
+                style="display: flex; gap: 50px; align-items: stretch; justify-content: space-between;">
+                <div class="left"
+                    style="flex: 1; display: flex; flex-direction: column; justify-content: center; position: relative; text-align: center;">
+                    <div
+                        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 300px; background: var(--accent-color); filter: blur(80px); opacity: 0.15; border-radius: 50%; z-index: -1;">
+                    </div>
+                    <img src="op.png" alt="Contact Me"
+                        style="width: 100%; max-width: 300px; border-radius: 24px; z-index: 1; margin: auto; margin-bottom: 30px;" />
+                    <h3 style="color: var(--text-main); font-size: 24px; margin-bottom: 10px;">Looking for
+                        Opportunities?</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 25px;">Open to internships, freelance work, and collaborations in Web
+                        Development, Data Analytics, and AI/ML. Let’s connect!</p>
+                    <div class="contact-socials" style="display: flex; gap: 20px; justify-content: center;">
+                        <a href="https://github.com/imluffy000" target="_blank" style="color: var(--text-muted); font-size: 28px; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/prasanth-changala-482308301" target="_blank" style="color: var(--text-muted); font-size: 28px; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:Prasanthchangala000@gmail.com" style="color: var(--text-muted); font-size: 28px; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--text-muted)'"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="right"
+                    style="flex: 1.2; background: var(--bg-card); padding: 40px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                    <form action="#" style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; gap: 20px;">
+                            <input type="text" placeholder="First Name"
+                                style="flex: 1; padding: 15px; border-radius: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text-main); font-family: 'Poppins', sans-serif; outline: none;" />
+                            <input type="text" placeholder="Last Name"
+                                style="flex: 1; padding: 15px; border-radius: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text-main); font-family: 'Poppins', sans-serif; outline: none;" />
+                        </div>
+                        <input type="email" placeholder="Email Address"
+                            style="padding: 15px; border-radius: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text-main); font-family: 'Poppins', sans-serif; outline: none;" />
+                        <input type="text" placeholder="Phone Number"
+                            style="padding: 15px; border-radius: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text-main); font-family: 'Poppins', sans-serif; outline: none;" />
+                        <textarea placeholder="Your Message" rows="4"
+                            style="padding: 15px; border-radius: 8px; background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); color: var(--text-main); font-family: 'Poppins', sans-serif; outline: none; resize: none;"></textarea>
+                        <button type="submit" class="btn-primary"
+                            style="width: 100%; border-radius: 8px; margin-top: 10px; padding: 15px;">Send
+                            Message</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-   
+
     <script src="script.js"></script>
 </body>
 
