@@ -90,3 +90,25 @@ function animateStars() {
   requestAnimationFrame(animateStars);
 }
 animateStars();
+
+// Function to download resume files
+function downloadResume() {
+  // File 1: AI/ML Resume
+  const link1 = document.createElement('a');
+  link1.href = 'resume AIML.pdf';
+  link1.download = 'Prasanth_Resume_AIML.pdf';
+  document.body.appendChild(link1);
+  link1.click();
+  document.body.removeChild(link1);
+
+  // Small delay before second download to ensure both trigger
+  setTimeout(() => {
+    // File 2: Data Analytics Resume
+    const link2 = document.createElement('a');
+    link2.href = 'resume DA.pdf';
+    link2.download = 'Prasanth_Resume_DA.pdf';
+    document.body.appendChild(link2);
+    link2.click();
+    document.body.removeChild(link2);
+  }, 100); // 100ms delay
+}
